@@ -8,7 +8,7 @@
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
   <title>똑… 똑… 똑… | 장태식 캐릭터 설정서</title>
   <meta name="description" content="머더 미스터리 똑… 똑… 똑… 장태식 전용 모바일 캐릭터 설정서">
-  <link rel="stylesheet" href="style.css?v=reader-tutorial-1">
+  <link rel="stylesheet" href="style.css?v=feedback-20260920">
 </head>
 <body class="is-locked">
   <span class="page-top-anchor" id="pageTop" aria-hidden="true"></span>
@@ -77,7 +77,7 @@
     <button class="map-modal__backdrop" id="mapBackdrop" type="button" tabindex="-1" aria-label="지도 닫기"></button>
     <section class="map-modal__panel" role="dialog" aria-modal="true" aria-labelledby="mapTitle">
       <header class="map-modal__header">
-        <div><span>TRAINING CENTER</span><h2 id="mapTitle">수련원 MAP</h2></div>
+        <div><span id="mapCounter">MAP 1 / 2</span><h2 id="mapTitle" aria-live="polite">수련원 지도</h2></div>
         <button id="mapClose" type="button">닫기</button>
       </header>
       <div class="map-toolbar" aria-label="지도 확대 설정">
@@ -89,7 +89,21 @@
       <div class="map-viewport" id="mapViewport" tabindex="0" aria-label="확대된 지도를 스크롤하여 확인">
         <img id="mapImage" src="map.png" alt="수련원 실외시설과 실내시설의 방 및 이동 구조를 보여 주는 지도" draggable="false">
       </div>
-      <p class="map-hint">확대 후 지도를 위아래·좌우로 움직여 확인하세요.</p>
+      <footer class="map-gallery-footer">
+        <div class="map-thumbnails" role="group" aria-label="지도 선택">
+          <button class="map-thumbnail" type="button" data-map-src="map.png" data-map-title="수련원 지도" data-map-alt="수련원 실외시설과 실내시설의 방 및 이동 구조를 보여 주는 지도" aria-label="수련원 지도 보기" aria-pressed="true" aria-controls="mapViewport">
+            <img src="map.png" alt="" width="56" height="48" loading="lazy" draggable="false">
+            <span class="map-thumbnail__label">수련원 지도</span>
+            <span class="map-thumbnail__check" aria-hidden="true">✓</span>
+          </button>
+          <button class="map-thumbnail" type="button" data-map-src="bed-layout.png" data-map-title="수련생방 침대 배치도" data-map-alt="수련생방 침대 배치도. 왼쪽 위는 서은찬, 왼쪽 아래는 김하준, 오른쪽은 민도겸, 아래쪽 가로 침대는 강태민. 창문은 위쪽, 출입문은 오른쪽 위에 있다." aria-label="수련생방 침대 배치도 보기" aria-pressed="false" aria-controls="mapViewport">
+            <img src="bed-layout.png" alt="" width="56" height="48" loading="lazy" draggable="false">
+            <span class="map-thumbnail__label">침대 배치도</span>
+            <span class="map-thumbnail__check" aria-hidden="true">✓</span>
+          </button>
+        </div>
+        <p class="map-hint">미리보기를 누르면 지도가 바뀝니다.<br>확대 후에는 위아래·좌우로 움직여 확인하세요.</p>
+      </footer>
     </section>
   </aside>
 
@@ -125,7 +139,7 @@
       <div class="story-block">
         <h3>도장에서의 당신</h3>
         <p>당신은 태권도장 관장, 장태식이다. 45세. 오랫동안 동네에서 태권도장을 운영했고, 학부모들에게는 엄격하지만 책임감 있는 사람으로 보이려 노력해 왔다.</p>
-        <p>당신에게 도장은 단순한 일터가 아니다. 수련생의 훈련, 학부모의 신뢰, 수련회 운영과 안전 문제까지 모두 당신 이름과 연결된다. 이번 일정은 고등부 수련생 몇 명과 사범 한유정을 데리고 산속의 오래된 수련원에서 하룻밤을 보내는 수련회였다.</p>
+        <p>당신에게 도장은 단순한 일터가 아니다. 수련생의 훈련, 학부모의 신뢰, 수련회 운영과 안전 문제까지 모두 당신 이름과 연결된다. 이번 일정은 고등부 수련생 몇 명과 사범 한유정을 데리고 산속의 오래된 수련원에서 하룻밤을 보내는 수련회였다. 한유정은 선수 생활을 병행하며 3주 뒤 국가대표 선발전을 준비하고 있다. 이번 기회를 유난히 중요하게 여긴다는 것은 당신도 알고 있다.</p>
       </div>
       <div class="story-block">
         <h3>닫힌 방의 위험</h3>
@@ -145,7 +159,7 @@
       <div class="story-block">
         <h3>창고의 서은찬</h3>
         <p>야외 화장실을 다녀오다가 열린 관리실 외부 출입문을 발견했다. 손전등을 비추자 연결문 너머 창고 안에 서은찬이 쓰러져 있었다.</p>
-        <p>왜 그곳에 있는지 알 수 없었다. 하지만 일이 알려지면 수련회 관리 책임이 커질 수 있었다. 당신은 은찬을 깨워 캐묻지 않고 창고 외부 출입문으로 데리고 나와, 수련생방에 조용히 눕혔다.</p>
+        <p>왜 그곳에 있는지 알 수 없었다. 하지만 일이 알려지면 수련회 관리 책임이 커질 수 있었다. 은찬은 숨을 쉬고 있었지만 의식이 없었다. 당신은 다른 사람에게 알리지 않고 은찬의 겨드랑이 밑으로 팔을 넣어 받쳐 들었다. 창고 외부 출입문으로 나와 수련생방으로 옮기는 동안, 은찬의 양말 신은 발끝이 간간이 바닥에 끌렸다. 방 안에서는 아무도 말을 걸지 않았다. 당신은 은찬을 조용히 눕혔다.</p>
       </div>
       <div class="story-block story-block--dark">
         <h3>아침에 본 피</h3>
@@ -160,7 +174,7 @@
       </div>
       <div class="story-block">
         <h3>녹음기를 꺼내다</h3>
-        <p>유선전화는 연결되지 않았고 휴대전화 신호도 거의 잡히지 않았다. 누군가는 시내로 내려가 경찰을 불러야 했다.</p>
+        <p>시신이 발견된 뒤, 당신은 관리실의 유선전화로 경찰에 연락하려 했다. 연결음이 들리지 않아 몇 차례 번호를 눌렀지만 소용없었고, 수화기를 제자리에 걸지 않은 채 나왔다. 휴대전화도 연결되지 않았다. 누군가는 시내로 내려가 경찰을 불러야 했다.</p>
         <p>그 전에 이 안에서 누가 무엇을 했는지 정리해야 한다고 판단했다. 당신은 수련회 기록용 카세트 녹음기를 꺼냈다.</p>
         <p class="ending-line">당신은 망치와 서은찬을 옮긴 사실을 숨긴 채, 모두에게 어젯밤 일을 말하라고 했다.</p>
       </div>
@@ -174,9 +188,9 @@
       <p class="timeline-note"><strong>읽는 법</strong> 배경 행동은 시간 구간으로 묶었고, 사건과 판단에 중요한 시각은 문장 안에 정확히 표시했습니다.</p>
       <ol class="timeline-list">
         <li class="timeline-list__critical"><div class="timeline-time" aria-label="19시 20분부터 19시 30분까지">19:20<br><span>~19:30</span></div><div><span class="location">닫힌 방·회의실</span><p>시설을 둘러보다 닫힌 방 안의 낡은 철제 캐비닛과 수리 물품을 확인하고 바깥 걸쇠를 걸었다. <strong>19:30</strong> 수련생들의 접근을 막으려고 관리인의 주의 메모를 귀신 괴담으로 바꿔 말했다.</p></div></li>
-        <li><div class="timeline-time" aria-label="22시부터 22시 40분까지">22:00<br><span>~22:40</span></div><div><span class="location">관장방</span><p>수련생들이 각자 방에서 쉬고 있다고 생각하고 잠들었다. <strong>22:40</strong> 야외 화장실에 가려고 깨어 배터리가 약한 손전등을 챙겼다.</p></div></li>
-        <li class="timeline-list__critical"><div class="timeline-time" aria-label="22시 40분부터 23시까지">22:40<br><span>~23:00</span></div><div><span class="location">관장방·야외 화장실·창고·수련생방</span><p><strong>22:42</strong> 관장방 문 옆에서 망치를 발견해 손잡이만 잡고 방 안으로 옮겼다. 좁은 손전등 불빛 탓에 검붉은 얼룩은 보지 못했다. <strong>22:45~22:48</strong> 야외 화장실에 다녀왔고, <strong>22:50</strong> 열린 관리실 연결문 너머 창고에서 쓰러진 서은찬을 발견했다. <strong>22:55</strong> 일을 크게 만들고 싶지 않아 누구도 깨우지 않고 은찬을 수련생방으로 옮겼다. <strong>23:00 이후</strong> 관장방으로 돌아가 누웠다.</p></div></li>
-        <li class="timeline-list__critical"><div class="timeline-time">다음 날<br>아침</div><div><span class="location">관장방·닫힌 방 앞·회의실</span><p>밝은 곳에서 망치에 묻은 마른 피를 발견하고 의심받을 것이 두려워 침대 아래에 숨겼다. 김하준의 시신이 발견되는 것을 지켜보며 망치와 서은찬을 옮긴 사실을 말하지 않았다. 외부 연락이 되지 않자 각자의 진술을 기록하겠다며 카세트 녹음기를 꺼냈다.</p></div></li>
+        <li><div class="timeline-time" aria-label="22시부터 22시 45분까지">22:00<br><span>~22:45</span></div><div><span class="location">관장방</span><p>수련생들이 각자 방에서 쉬고 있다고 생각하고 잠들었다. <strong>22:45</strong> 야외 화장실에 가려고 깨어 배터리가 약한 손전등을 챙겼다.</p></div></li>
+        <li class="timeline-list__critical"><div class="timeline-time" aria-label="22시 45분부터 23시 05분까지">22:45<br><span>~23:05</span></div><div><span class="location">관장방·야외 화장실·창고·수련생방</span><p><strong>22:47</strong> 관장방 문 옆에서 망치를 발견해 손잡이만 잡고 방 안으로 옮겼다. 좁은 손전등 불빛 탓에 검붉은 얼룩은 보지 못했다. <strong>22:50~22:53</strong> 야외 화장실에 다녀왔고, <strong>22:55</strong> 열린 관리실 연결문 너머 창고에서 쓰러진 서은찬을 발견했다. 숨을 쉬고 있었지만 의식은 없었다. 일을 크게 만들고 싶지 않아 다른 사람에게 알리지 않고 받쳐 들어 옮겼다. 은찬의 발끝이 간간이 바닥에 끌렸다. <strong>23:00</strong> 수련생방에 눕혔고, 방 안에서는 아무도 말을 걸지 않았다. <strong>23:05 이후</strong> 관장방으로 돌아가 누웠다.</p></div></li>
+        <li class="timeline-list__critical"><div class="timeline-time">다음 날<br>아침</div><div><span class="location">관장방·닫힌 방 앞·관리실·회의실</span><p>밝은 곳에서 망치에 묻은 마른 피를 발견하고 의심받을 것이 두려워 침대 아래에 숨겼다. 김하준의 시신이 발견되는 것을 지켜보며 망치와 서은찬을 옮긴 사실을 말하지 않았다. 시신 발견 뒤 관리실의 유선전화로 연락을 시도했지만 연결되지 않았다. 수화기를 제자리에 걸지 않은 채 회의실로 돌아와, 각자의 진술을 기록하겠다며 카세트 녹음기를 꺼냈다.</p></div></li>
       </ol>
     </section>
 
@@ -221,7 +235,7 @@
         <span class="section-number">07</span>
         <div><p>OPENING STATEMENT</p><h2>첫 진술</h2></div>
       </div>
-      <div class="statement-note"><strong>게임 시작 시 읽습니다.</strong><p>자신의 차례가 오면 아래 내용을 다른 플레이어에게 그대로 읽어 주세요.</p></div>
+      <div class="statement-note"><strong>오프닝에서는 캐릭터 카드의 첫 진술 요약을 읽습니다.</strong><p>아래는 그 진술의 전체 내용입니다. 비밀을 숨기려 사실과 다르게 말한 부분이 있습니다. 자신이 실제로 기억하는 행동은 ‘배경’과 ‘그날 밤의 행동’을 기준으로 확인하세요.</p></div>
       <blockquote class="statement-card" id="statementText">
         <p>“나는 어젯밤 저녁 식사 이후로 거의 관장방에 있었어. 수련회 일정도 정리해야 했고, 내일 아침에 어떻게 움직일지도 생각해야 했으니까.</p>
         <p>닫힌 방 쪽으로 간 적은 없어. 하준이를 본 것도 저녁 이후로는 없어. 밤에 작은 소리야 들렸을 수 있지만, 누가 위험하다고 느낄 만한 소리는 듣지 못했어.</p>
@@ -237,6 +251,6 @@
   </main>
 
   <button class="top-button" id="topButton" type="button" tabindex="-1" aria-hidden="true" aria-label="맨 위로 이동" title="맨 위로">↑</button>
-  <script src="script.js?v=reader-tutorial-1"></script>
+  <script src="script.js?v=feedback-20260920"></script>
 </body>
 </html>
